@@ -1,4 +1,4 @@
-// Generator (Round Robin — список букв)
+// Generator 
 function* letterGenerator() {
   let letters = ["A", "B", "C"];
   let i = 0;
@@ -13,7 +13,7 @@ function* letterGenerator() {
   }
 }
 
-// Iterator with timeout (очень простой)
+// Iterator with timeout 
 function runIterator(iter, seconds) {
   let timeStart = Date.now();
 
@@ -34,4 +34,5 @@ function runIterator(iter, seconds) {
 
 // Example
 let myGen = letterGenerator();
+
 runIterator(myGen, 4);
